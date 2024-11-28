@@ -1,0 +1,14 @@
+CREATE DATABASE  IF NOT EXISTS `restaurant` ;
+USE `restaurant`;
+
+CREATE TABLE `users` (
+  `USR_ID` int NOT NULL AUTO_INCREMENT,
+  `USR_NAME` varchar(100) DEFAULT NULL,
+  `USR_PHONE` float DEFAULT NULL,
+  `USR_IMAGE_URL` varchar(255) DEFAULT NULL,
+  `USR_EMAIL` varchar(100) DEFAULT NULL,
+  `USR_TYPE` varchar(50) DEFAULT NULL,
+  `USR_STATE` varchar(50) NULL,
+  PRIMARY KEY (`USR_ID`),
+  UNIQUE KEY `USR_ID_UNIQUE` (`USR_ID`);
+);
